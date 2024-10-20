@@ -9,8 +9,6 @@ const HistoricDatesContainer = styled.section`
   overflow: hidden;
   display: flex;
   flex-direction: column;
-
-  
 `;
 
 const Heading = styled.h1`
@@ -23,6 +21,16 @@ const Heading = styled.h1`
   line-height: 120%;
   color: #42567A;
   max-width: 353px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 120px;
+    background: linear-gradient(180deg, #3877EE, #EF5DA8);
+    bottom: 10px;
+    left: -1px;
   }
 `;
 
